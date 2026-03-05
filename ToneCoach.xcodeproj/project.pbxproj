@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* ToneCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001; };
+		A10002 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002; };
+		A10003 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003; };
+		A10004 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004; };
+		A10005 /* LiveMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005; };
+		A10006 /* CoachingBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006; };
+		A10007 /* MiniSparkline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007; };
+		A10008 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008; };
+		A10009 /* SessionResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009; };
+		A10010 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010; };
+		A10011 /* CoachingPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011; };
+		A10012 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012; };
+		A10013 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013; };
+		A10014 /* VolumeAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10014; };
+		A10015 /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10015; };
+		A10016 /* CadenceAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10016; };
+		A10017 /* PhraseSegmenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10017; };
+		A10018 /* DownToneClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10018; };
+		A10019 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10019; };
+		A10020 /* LiveCoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020; };
+		A10021 /* PracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021; };
+		A10022 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022; };
+		A10023 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10023; };
+		A10024 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10024; };
+		A10025 /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10025; };
+		A10060 /* ToneCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10060; };
+		A10026 /* LiveCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10026; };
+		A10027 /* VolumeGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10027; };
+		A10028 /* CadenceGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10028; };
+		A10029 /* PitchContourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10029; };
+		A10030 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10030; };
+		A10031 /* SessionSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10031; };
+		A10032 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10032; };
+		A10033 /* TrendChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10033; };
+		A10034 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10034; };
+		A10035 /* UGCModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10035; };
+		A10036 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10036; };
+		A10037 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10037; };
+		A10038 /* MathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10038; };
+		A10039 /* ShareCardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10039; };
+		A10040 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10041; };
+		A10041 /* SettingsPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10042; };
+		A10051 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10051; };
+		A10052 /* Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10052; };
+		A10053 /* DebugState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10053; };
+		A10054 /* DebugOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10054; };
+		A10055 /* VolumeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10055; };
+		A20001 /* MathHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10001; };
+		A20002 /* PitchSlopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10002; };
+		A20003 /* CadenceAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10003; };
+		A20004 /* RingBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10004; };
+		A20005 /* SettingsPresetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10005; };
+		A20006 /* PhraseSegmenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10006; };
+		A20007 /* CadenceGatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10007; };
+		A20008 /* DownToneUnknownPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10008; };
+		A20009 /* SnapshotThrottlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10009; };
+		A30001 /* SessionFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10001; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E10001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NT0001;
+			remoteInfo = ToneCoach;
+		};
+		E10002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NT0001;
+			remoteInfo = ToneCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B10001 /* ToneCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneCoachApp.swift; sourceTree = "<group>"; };
+		B10002 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B10003 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		B10004 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		B10005 /* LiveMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMeter.swift; sourceTree = "<group>"; };
+		B10006 /* CoachingBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingBadge.swift; sourceTree = "<group>"; };
+		B10007 /* MiniSparkline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniSparkline.swift; sourceTree = "<group>"; };
+		B10008 /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
+		B10009 /* SessionResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResultCard.swift; sourceTree = "<group>"; };
+		B10010 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B10011 /* CoachingPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingPrompt.swift; sourceTree = "<group>"; };
+		B10012 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		B10013 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		B10014 /* VolumeAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeAnalyzer.swift; sourceTree = "<group>"; };
+		B10015 /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		B10016 /* CadenceAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadenceAnalyzer.swift; sourceTree = "<group>"; };
+		B10017 /* PhraseSegmenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseSegmenter.swift; sourceTree = "<group>"; };
+		B10018 /* DownToneClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownToneClassifier.swift; sourceTree = "<group>"; };
+		B10019 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B10020 /* LiveCoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCoachViewModel.swift; sourceTree = "<group>"; };
+		B10021 /* PracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewModel.swift; sourceTree = "<group>"; };
+		B10022 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		B10023 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B10024 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B10025 /* CalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
+		B10060 /* ToneCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneCardView.swift; sourceTree = "<group>"; };
+		B10026 /* LiveCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCoachView.swift; sourceTree = "<group>"; };
+		B10027 /* VolumeGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeGaugeView.swift; sourceTree = "<group>"; };
+		B10028 /* CadenceGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadenceGaugeView.swift; sourceTree = "<group>"; };
+		B10029 /* PitchContourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchContourView.swift; sourceTree = "<group>"; };
+		B10030 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		B10031 /* SessionSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryView.swift; sourceTree = "<group>"; };
+		B10032 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B10033 /* TrendChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendChartView.swift; sourceTree = "<group>"; };
+		B10034 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10035 /* UGCModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGCModeView.swift; sourceTree = "<group>"; };
+		B10036 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		B10037 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		B10038 /* MathHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelpers.swift; sourceTree = "<group>"; };
+		B10039 /* ShareCardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardGenerator.swift; sourceTree = "<group>"; };
+		B10040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10041 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		B10042 /* SettingsPresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresets.swift; sourceTree = "<group>"; };
+		B10051 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		B10052 /* Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshots.swift; sourceTree = "<group>"; };
+		B10053 /* DebugState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugState.swift; sourceTree = "<group>"; };
+		B10054 /* DebugOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverlayView.swift; sourceTree = "<group>"; };
+		B10055 /* VolumeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeCard.swift; sourceTree = "<group>"; };
+		C10001 /* MathHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathHelpersTests.swift; sourceTree = "<group>"; };
+		C10002 /* PitchSlopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchSlopeTests.swift; sourceTree = "<group>"; };
+		C10003 /* CadenceAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadenceAnalyzerTests.swift; sourceTree = "<group>"; };
+		C10004 /* RingBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBufferTests.swift; sourceTree = "<group>"; };
+		C10005 /* SettingsPresetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresetsTests.swift; sourceTree = "<group>"; };
+		C10006 /* PhraseSegmenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseSegmenterTests.swift; sourceTree = "<group>"; };
+		C10007 /* CadenceGatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadenceGatingTests.swift; sourceTree = "<group>"; };
+		C10008 /* DownToneUnknownPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownToneUnknownPolicyTests.swift; sourceTree = "<group>"; };
+		C10009 /* SnapshotThrottlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotThrottlingTests.swift; sourceTree = "<group>"; };
+		D10001 /* SessionFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFlowTests.swift; sourceTree = "<group>"; };
+		PR0001 /* ToneCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToneCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		PR0002 /* ToneCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		PR0003 /* ToneCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FW0001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FW0002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FW0003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000 = {
+			isa = PBXGroup;
+			children = (
+				G10000 /* ToneCoach */,
+				G20000 /* ToneCoachTests */,
+				G30000 /* ToneCoachUITests */,
+				G90000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G90000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PR0001 /* ToneCoach.app */,
+				PR0002 /* ToneCoachTests.xctest */,
+				PR0003 /* ToneCoachUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		G10000 /* ToneCoach */ = {
+			isa = PBXGroup;
+			children = (
+				G11000 /* App */,
+				G12000 /* DesignSystem */,
+				G13000 /* Models */,
+				G14000 /* Audio */,
+				G15000 /* ViewModels */,
+				G16000 /* Views */,
+				G17000 /* Storage */,
+				G18000 /* Utilities */,
+			);
+			path = ToneCoach;
+			sourceTree = "<group>";
+		};
+		G11000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* ToneCoachApp.swift */,
+				B10040 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G12000 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B10002 /* Colors.swift */,
+				B10003 /* Typography.swift */,
+				B10004 /* Spacing.swift */,
+				G12100 /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		G12100 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B10005 /* LiveMeter.swift */,
+				B10006 /* CoachingBadge.swift */,
+				B10007 /* MiniSparkline.swift */,
+				B10008 /* MetricCard.swift */,
+				B10009 /* SessionResultCard.swift */,
+				B10051 /* ButtonStyles.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		G13000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10010 /* Session.swift */,
+				B10011 /* CoachingPrompt.swift */,
+				B10012 /* UserSettings.swift */,
+				B10042 /* SettingsPresets.swift */,
+				B10052 /* Snapshots.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G14000 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				B10013 /* AudioEngine.swift */,
+				B10014 /* VolumeAnalyzer.swift */,
+				B10015 /* PitchDetector.swift */,
+				B10016 /* CadenceAnalyzer.swift */,
+				B10017 /* PhraseSegmenter.swift */,
+				B10018 /* DownToneClassifier.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		G15000 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B10019 /* OnboardingViewModel.swift */,
+				B10020 /* LiveCoachViewModel.swift */,
+				B10021 /* PracticeViewModel.swift */,
+				B10022 /* HistoryViewModel.swift */,
+				B10023 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G16000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				G16700 /* Components */,
+				G16100 /* Onboarding */,
+				G16200 /* LiveCoach */,
+				G16300 /* Practice */,
+				G16400 /* History */,
+				G16500 /* Settings */,
+				G16600 /* Shared */,
+				B10054 /* DebugOverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G16700 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B10055 /* VolumeCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		G16100 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B10024 /* OnboardingView.swift */,
+				B10025 /* CalibrationView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		G16200 /* LiveCoach */ = {
+			isa = PBXGroup;
+			children = (
+				B10026 /* LiveCoachView.swift */,
+				B10060 /* ToneCardView.swift */,
+				B10027 /* VolumeGaugeView.swift */,
+				B10028 /* CadenceGaugeView.swift */,
+				B10029 /* PitchContourView.swift */,
+			);
+			path = LiveCoach;
+			sourceTree = "<group>";
+		};
+		G16300 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				B10030 /* PracticeView.swift */,
+				B10031 /* SessionSummaryView.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		G16400 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				B10032 /* HistoryView.swift */,
+				B10033 /* TrendChartView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		G16500 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B10034 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		G16600 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B10035 /* UGCModeView.swift */,
+				B10036 /* ShareCardView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		G17000 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B10037 /* SessionStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		G18000 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B10038 /* MathHelpers.swift */,
+				B10039 /* ShareCardGenerator.swift */,
+				B10041 /* RingBuffer.swift */,
+				B10053 /* DebugState.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		G20000 /* ToneCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				C10001 /* MathHelpersTests.swift */,
+				C10002 /* PitchSlopeTests.swift */,
+				C10003 /* CadenceAnalyzerTests.swift */,
+				C10004 /* RingBufferTests.swift */,
+				C10005 /* SettingsPresetsTests.swift */,
+				C10006 /* PhraseSegmenterTests.swift */,
+				C10007 /* CadenceGatingTests.swift */,
+				C10008 /* DownToneUnknownPolicyTests.swift */,
+				C10009 /* SnapshotThrottlingTests.swift */,
+			);
+			path = ToneCoachTests;
+			sourceTree = "<group>";
+		};
+		G30000 /* ToneCoachUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D10001 /* SessionFlowTests.swift */,
+			);
+			path = ToneCoachUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		NT0001 /* ToneCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0001 /* Build configuration list for PBXNativeTarget "ToneCoach" */;
+			buildPhases = (
+				SR0001 /* Sources */,
+				FW0001 /* Frameworks */,
+				RS0001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToneCoach;
+			productName = ToneCoach;
+			productReference = PR0001 /* ToneCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		NT0002 /* ToneCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0002 /* Build configuration list for PBXNativeTarget "ToneCoachTests" */;
+			buildPhases = (
+				SR0002 /* Sources */,
+				FW0002 /* Frameworks */,
+				RS0002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TD0001 /* PBXTargetDependency */,
+			);
+			name = ToneCoachTests;
+			productName = ToneCoachTests;
+			productReference = PR0002 /* ToneCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		NT0003 /* ToneCoachUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0003 /* Build configuration list for PBXNativeTarget "ToneCoachUITests" */;
+			buildPhases = (
+				SR0003 /* Sources */,
+				FW0003 /* Frameworks */,
+				RS0003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TD0002 /* PBXTargetDependency */,
+			);
+			name = ToneCoachUITests;
+			productName = ToneCoachUITests;
+			productReference = PR0003 /* ToneCoachUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					NT0001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					NT0002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = NT0001;
+					};
+					NT0003 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = NT0001;
+					};
+				};
+			};
+			buildConfigurationList = BC0000 /* Build configuration list for PBXProject "ToneCoach" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G00000;
+			productRefGroup = G90000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				NT0001 /* ToneCoach */,
+				NT0002 /* ToneCoachTests */,
+				NT0003 /* ToneCoachUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RS0001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		RS0002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		RS0003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SR0001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* ToneCoachApp.swift in Sources */,
+				A10002 /* Colors.swift in Sources */,
+				A10003 /* Typography.swift in Sources */,
+				A10004 /* Spacing.swift in Sources */,
+				A10005 /* LiveMeter.swift in Sources */,
+				A10006 /* CoachingBadge.swift in Sources */,
+				A10007 /* MiniSparkline.swift in Sources */,
+				A10008 /* MetricCard.swift in Sources */,
+				A10009 /* SessionResultCard.swift in Sources */,
+				A10010 /* Session.swift in Sources */,
+				A10011 /* CoachingPrompt.swift in Sources */,
+				A10012 /* UserSettings.swift in Sources */,
+				A10013 /* AudioEngine.swift in Sources */,
+				A10014 /* VolumeAnalyzer.swift in Sources */,
+				A10015 /* PitchDetector.swift in Sources */,
+				A10016 /* CadenceAnalyzer.swift in Sources */,
+				A10017 /* PhraseSegmenter.swift in Sources */,
+				A10018 /* DownToneClassifier.swift in Sources */,
+				A10019 /* OnboardingViewModel.swift in Sources */,
+				A10020 /* LiveCoachViewModel.swift in Sources */,
+				A10021 /* PracticeViewModel.swift in Sources */,
+				A10022 /* HistoryViewModel.swift in Sources */,
+				A10023 /* SettingsViewModel.swift in Sources */,
+				A10024 /* OnboardingView.swift in Sources */,
+				A10025 /* CalibrationView.swift in Sources */,
+				A10026 /* LiveCoachView.swift in Sources */,
+				A10060 /* ToneCardView.swift in Sources */,
+				A10027 /* VolumeGaugeView.swift in Sources */,
+				A10028 /* CadenceGaugeView.swift in Sources */,
+				A10029 /* PitchContourView.swift in Sources */,
+				A10030 /* PracticeView.swift in Sources */,
+				A10031 /* SessionSummaryView.swift in Sources */,
+				A10032 /* HistoryView.swift in Sources */,
+				A10033 /* TrendChartView.swift in Sources */,
+				A10034 /* SettingsView.swift in Sources */,
+				A10035 /* UGCModeView.swift in Sources */,
+				A10036 /* ShareCardView.swift in Sources */,
+				A10037 /* SessionStore.swift in Sources */,
+				A10038 /* MathHelpers.swift in Sources */,
+				A10039 /* ShareCardGenerator.swift in Sources */,
+				A10040 /* RingBuffer.swift in Sources */,
+				A10041 /* SettingsPresets.swift in Sources */,
+				A10051 /* ButtonStyles.swift in Sources */,
+				A10052 /* Snapshots.swift in Sources */,
+				A10053 /* DebugState.swift in Sources */,
+				A10054 /* DebugOverlayView.swift in Sources */,
+				A10055 /* VolumeCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SR0002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20001 /* MathHelpersTests.swift in Sources */,
+				A20002 /* PitchSlopeTests.swift in Sources */,
+				A20003 /* CadenceAnalyzerTests.swift in Sources */,
+				A20004 /* RingBufferTests.swift in Sources */,
+				A20005 /* SettingsPresetsTests.swift in Sources */,
+				A20006 /* PhraseSegmenterTests.swift in Sources */,
+				A20007 /* CadenceGatingTests.swift in Sources */,
+				A20008 /* DownToneUnknownPolicyTests.swift in Sources */,
+				A20009 /* SnapshotThrottlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SR0003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30001 /* SessionFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		TD0001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT0001 /* ToneCoach */;
+			targetProxy = E10001 /* PBXContainerItemProxy */;
+		};
+		TD0002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT0001 /* ToneCoach */;
+			targetProxy = E10002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		XC0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		XC0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		XC0003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3U44BFG8AY;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ToneCoach/App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonecoach.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		XC0004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3U44BFG8AY;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ToneCoach/App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonecoach.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		XC0005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonecoach.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToneCoach.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToneCoach";
+			};
+			name = Debug;
+		};
+		XC0006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonecoach.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToneCoach.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToneCoach";
+			};
+			name = Release;
+		};
+		XC0007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonecoach.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = ToneCoach;
+			};
+			name = Debug;
+		};
+		XC0008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonecoach.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = ToneCoach;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0000 /* Build configuration list for PBXProject "ToneCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC0001 /* Debug */,
+				XC0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0001 /* Build configuration list for PBXNativeTarget "ToneCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC0003 /* Debug */,
+				XC0004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0002 /* Build configuration list for PBXNativeTarget "ToneCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC0005 /* Debug */,
+				XC0006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0003 /* Build configuration list for PBXNativeTarget "ToneCoachUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC0007 /* Debug */,
+				XC0008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = F10001 /* Project object */;
+}

@@ -1,0 +1,52 @@
+name: ToneCoach
+options:
+  bundleIdPrefix: com.tonecoach
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: "3U44BFG8AY"
+    CODE_SIGN_IDENTITY: "Apple Development"
+
+targets:
+  ToneCoach:
+    type: application
+    platform: iOS
+    sources:
+      - ToneCoach
+    settings:
+      base:
+        INFOPLIST_FILE: ToneCoach/App/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.tonecoach.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    scheme:
+      testTargets:
+        - ToneCoachTests
+        - ToneCoachUITests
+      gatherCoverageData: true
+
+  ToneCoachTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - ToneCoachTests
+    dependencies:
+      - target: ToneCoach
+    settings:
+      base:
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/ToneCoach.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToneCoach"
+
+  ToneCoachUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - ToneCoachUITests
+    dependencies:
+      - target: ToneCoach
