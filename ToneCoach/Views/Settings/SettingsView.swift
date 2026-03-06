@@ -62,6 +62,9 @@ struct SettingsView: View {
                             }
                         }
 
+                        // ── Haptics ──
+                        hapticsToggle
+
                         // ── Advanced ──
                         advancedSection
 
@@ -210,6 +213,31 @@ struct SettingsView: View {
                     .fill(isSelected ? TCColor.accent : TCColor.surfaceAlt)
             )
         }
+    }
+
+    // MARK: - Haptics Toggle
+
+    private var hapticsToggle: some View {
+        HStack {
+            HStack(spacing: TCSpacing.xs) {
+                Image(systemName: "iphone.radiowaves.left.and.right")
+                    .font(.system(size: 14))
+                    .foregroundStyle(TCColor.accent)
+                Text("Haptic Feedback")
+                    .font(TCFont.headline)
+                    .foregroundStyle(TCColor.textPrimary)
+            }
+            Spacer()
+            Toggle("", isOn: $vm.hapticsEnabled)
+                .labelsHidden()
+                .tint(TCColor.accent)
+        }
+        .padding(TCSpacing.md)
+        .background(
+            RoundedRectangle(cornerRadius: TCRadius.md)
+                .fill(TCColor.surface)
+        )
+        .padding(.horizontal, TCSpacing.md)
     }
 
     // MARK: - Advanced

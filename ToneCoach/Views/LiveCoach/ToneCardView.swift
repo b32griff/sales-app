@@ -6,9 +6,7 @@ import SwiftUI
 struct ToneCard: View {
     let state: ToneState
 
-    // Haptic generators — created once, reused per event
-    private let successHaptic = UINotificationFeedbackGenerator()
-    private let failHaptic = UIImpactFeedbackGenerator(style: .light)
+    private let haptics = HapticEngine.shared
 
     /// Last 3 phrase results for the strip display.
     private var recentPhrases: [AudioEngine.PhraseResult] {
@@ -119,12 +117,9 @@ struct ToneCard: View {
 
     private func fireHaptic(for grade: PhraseGrade) {
         switch grade {
-        case .pass:
-            successHaptic.notificationOccurred(.success)
-        case .fail:
-            failHaptic.impactOccurred()
-        case .unknown:
-            break
+        case .pass:    haptics.phrasePass()
+        case .fail:    haptics.phraseFail()
+        case .unknown: break
         }
     }
 }

@@ -16,6 +16,7 @@ final class UserSettings: ObservableObject {
     @AppStorage("hasCompletedOnboarding") var hasCompletedOnboarding: Bool = false
     @AppStorage("calibratedDBBaseline") var calibratedDBBaseline: Double = -45
     @AppStorage("desiredEndingTone") var desiredEndingToneRaw: String = PhraseEndingTone.down.rawValue
+    @AppStorage("hapticsEnabled") var hapticsEnabled: Bool = true
 
     var desiredEndingTone: PhraseEndingTone {
         get { PhraseEndingTone(rawValue: desiredEndingToneRaw) ?? .down }

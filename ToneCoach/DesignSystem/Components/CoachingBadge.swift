@@ -29,6 +29,7 @@ struct CoachingBadge: View {
             .offset(y: isVisible ? 0 : 6)
             .onAppear {
                 withAnimation(.easeOut(duration: 0.25)) { isVisible = true }
+                HapticEngine.shared.coachingNudge()
             }
             .onTapGesture {
                 withAnimation(.easeIn(duration: 0.15)) { dismissed = true }

@@ -5,7 +5,7 @@ import AVFoundation
 /// Manages practice session lifecycle: start, stop, save, summary.
 @MainActor
 final class PracticeViewModel: ObservableObject {
-    enum State {
+    enum State: Equatable {
         case idle
         case recording
         case summary
@@ -56,11 +56,13 @@ final class PracticeViewModel: ObservableObject {
     }
 
     private func doStart() {
+        HapticEngine.shared.prepare()
         do {
             try audioEngine.start()
             state = .recording
             elapsedTime = "0:00"
             startTimer()
+            HapticEngine.shared.sessionStart()
             print("[ToneCoach] Recording started")
         } catch {
             errorMessage = "Audio error: \(error.localizedDescription)"
@@ -71,6 +73,7 @@ final class PracticeViewModel: ObservableObject {
 
     func stopSession(context: ModelContext) {
         print("[ToneCoach] Stop tapped")
+        HapticEngine.shared.sessionStop()
         timer?.invalidate()
         timer = nil
         binder.invalidateTimers()

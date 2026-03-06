@@ -35,6 +35,11 @@ final class SettingsViewModel: ObservableObject {
         set { settings.desiredEndingTone = newValue; objectWillChange.send() }
     }
 
+    var hapticsEnabled: Bool {
+        get { settings.hapticsEnabled }
+        set { settings.hapticsEnabled = newValue; objectWillChange.send() }
+    }
+
     // MARK: - Presets
 
     var volumePreset: VolumePreset? {
@@ -64,6 +69,7 @@ final class SettingsViewModel: ObservableObject {
         settings.targetWPMMax = 185
         settings.sensitivity = 0.5
         settings.desiredEndingTone = .down
+        settings.hapticsEnabled = true
         objectWillChange.send()
     }
 }

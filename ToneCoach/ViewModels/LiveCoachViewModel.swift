@@ -247,8 +247,6 @@ final class LiveCoachBinder {
     // Debounce/cooldown handled in CadenceAnalyzer's timestamp-based state machine.
     // Binder just reads the computed coaching state and applies UI transitions.
 
-    private let bannerHaptic = UIImpactFeedbackGenerator(style: .light)
-
     private func applyCadenceCoaching(_ state: CadenceCoachState) {
         let newMessage = state.message
         guard newMessage != cadence.bannerMessage else { return }
@@ -258,7 +256,7 @@ final class LiveCoachBinder {
         }
 
         if newMessage != nil {
-            bannerHaptic.impactOccurred()
+            HapticEngine.shared.coachingNudge()
             // Suppress duplicate cadence prompt from CoachingBadge
             if prompt.current?.category == .cadence {
                 prompt.current = nil
